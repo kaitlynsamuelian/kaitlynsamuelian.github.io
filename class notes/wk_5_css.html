@@ -1,0 +1,70 @@
+<!-- in the head, in line and external are all options for css -->
+<!-- css document is made up of rule sets -->
+<!-- start with the thing that you want to change, tag type the id (the selector) -->
+<!--then the property then the value (the color:red; is the declaration part )-->
+
+<!DOCTYPE html>
+<html lang-=" en">
+
+<head>
+    <meta charset="utf-8">
+    <title>these are our notes for wk5</title>
+    <link rel="stylesheet" href="wk_5_testcss.css">
+    <!--anytime your doing stylesheets this is how you will do it in the head -->
+</head>
+
+<body>
+    <p>this is a paragraph</p>
+    <h1>welcome to week 5</h1>
+    <p>this is weeek we are learning css</p>
+    <table id="test-table">
+        <tr>
+            <th id="test_table_header_1">HEADER</th>
+            <th>HEADER</th>
+            <th>HEADER</th>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
+    <ol class="list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li id= "testitem">List Item 3</li>
+    </ol>
+    <ul class="list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    <ol class="list">
+        <li>List Item 1
+            <ul>
+                <li>Sub List item 1</li>
+                <li>Sub list item 2</li>
+            </ul>
+        </li>
+        <li>List Item 2</li>
+
+        <li>List Item 3</li>
+    </ol>
+
+    <div>
+        <img src="boots.jpg" style="width: 100px">
+        <h2>This is a photo of Boots</h2>
+    </div>
+
+    <a href="#test_table">jump to test table</a>
+
+</body>
+
+</html>
+
+<!--look at her list of selectors to see how to pick the right selector name -->
+
+
+<!--cascade, specifity, inheritence: css is read from top to bottom -->
+<!--anything inside the overarching element will have all the styling that you give the overarching element-->

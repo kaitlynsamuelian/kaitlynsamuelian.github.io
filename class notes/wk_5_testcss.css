@@ -1,0 +1,40 @@
+p{
+    color:blue;
+    font-family: sanse-serif;
+    font-size: 150%;
+    font-style:italic;
+    font-weight:900;
+}
+
+table{
+    border-style:solid;
+    border-color:purple;
+    background-color: purple;
+}
+td{
+    border-style: solid;
+    border-color: black;
+}
+div{
+    color:pink;
+}
+/*how to access wih a tag */
+
+ol.list{
+    font-weight:900;
+}
+/*how to access with a class */
+
+#testitem{
+    border-color:pink;
+    border-style:dotted;
+}
+/* how to access with an id*/
+
+a:hover{
+    border-color:purple;
+    border-style:solid;
+    border-width: 3px;
+}
+/*when you hover over the test table link this border will come up */
+/*pseduo class */
