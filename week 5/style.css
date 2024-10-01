@@ -116,3 +116,102 @@ Recall from earlier that the content box height should be 30px — this gives yo
     line-height: 1.5em;   
     
 }
+
+
+
+/* my card below */
+
+
+/* .card article img .card footer .card header .card */
+/* Rulesets to be matched up with selectors */
+
+.myCard {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color:#ff87c3;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.myCard header {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 200, 0.44), rgba(255, 255, 255, 0.44));
+    border-radius: 1.5em 1.5em 0 0;
+}
+
+
+.myCard footer {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.44), rgba(255, 0, 200, 0.44));
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+
+.myCard article img {
+    max-height: 100%;
+    float: right;
+}
+
+
+
+/* rulesets you need to write: 
+
+-Write a ruleset that targets both the card header, and card footer, giving them both a computed total height of 50px (including a content height of 30px and padding of 10px on all sides.)
+  But express it in ems.
+*/
+
+.myCard header, .myCard footer {
+    height: 3em;    /* Content height */
+    padding: 1em;   /* Padding on all sides (top, right, bottom, left) */
+}
+
+/* 
+
+other styles:
+-The default margin applied to the <h2> and <p> elements by the browser will interfere with our design, so write a rule that targets all these elements and sets their margin to 0.
+*/
+h2, p{
+    margin: 0;
+}
+
+/*
+
+-Set the <article>'s height to 120px, but expressed in ems and Also give it a background color of semi-transparent black
+*/
+.myCard article {
+    height: 12em; /* 120px in ems */
+    background-color: rgb(255, 255, 255); /*white*/
+}
+/*
+
+
+-Write a ruleset that gives the <h2> an effective font size of 20px (but expressed in ems) and an appropriate line height to place it in the center of the header's content box. Recall from earlier
+ that the content box height should be 30px — this gives you all the numbers you need to calculate the line height.
+
+*/
+.myCard header h2{
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 0;
+
+}
+/* -Write a ruleset that gives the <p> inside the footer an effective font size of 15px (but expressed in ems) and an appropriate line height to place it in the center of the footer's content box.
+Recall from earlier that the content box height should be 30px — this gives you all the numbers you need to calculate the line height. */
+
+.myCard footer p{
+    font-size: 2em;
+    font-style: oblique;
+    line-height:1.75em;
+    padding-left:4.8em;
+}
+/*
+ -As a last little touch, give the paragraph inside the <article> an appropriate padding value so that its left edge lines up with the <h2> and footer paragraph, and set its color to be fairly light so it is easy to read. */  
+.myCard article p{
+    padding-top: 0.7em;
+    padding-left: 1em;      /* Aligns the left edge with the h2 and footer paragraph */
+    color: #ff87c3;
+    line-height: 1.5em;   
+    
+}
+
+/* have to use each tag that is inside of <p> or it wont apply to the list itmes etc  */
