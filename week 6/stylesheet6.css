@@ -1,0 +1,114 @@
+/* .background-img{
+    background-image:url(/img/CherryBlossoms.jpg);
+    height:100vh;
+    width:100vw; 
+    background-size:cover;
+
+} */
+
+.background-img {
+    background-image: url('/img/infomercial.jpg');
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-size: contain; /* Ensures the whole image is visible */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: black; /* Optional: adds a black background behind image */
+}
+.box{
+    position: relative;
+    height:15em;
+    width:10em;
+    background-color:red;
+    border:2px solid black;
+    top:60%;
+    left:5%;
+    padding: 10px;
+
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center the items vertically */
+    background-color: DodgerBlue;
+    height: 40vh; /* Full viewport height */
+    width: 200px; /* Fixed width for the container */
+    position: relative; /* Fixes the container to the left side */
+    left: 15%; /* Align to the left edge of the screen */
+    top:20%;
+    padding:10px
+  }
+  
+.flex-container > div {
+    /* background-color: #f1f1f1; */
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
+  
+  /* Styling for individual divs */
+  .box1 {
+    color:aqua;
+    flex: 0.15; /* Take up more space */
+    background-color: rgb(241, 192, 255);
+    padding: 10px;
+    position:relative;
+  }
+  
+  .box2 {
+    flex: 0.15; /* Default size */
+    background-color: lightgreen;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .box3 {
+    flex: 0.15; /* Slightly larger than default */
+    background-color: lightblue;
+    padding: 10px;
+    position: relative;
+  }
+
+.nested-box1, .nested-box2, .nested-box3, .sub-box1, .nested-box4 {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.nested-box1 {
+    background-color: lightyellow;
+}
+
+.nested-box2 {
+    background-color: lightcoral;
+}
+
+.nested-box3 {
+    background-color: lightcyan;
+}
+/*
+.box p{
+    font-size: 3em;
+}
+.box .sub-box1{
+    position: relative;
+    height:15em;
+    width:10em;
+    background-color:red;
+    border:2px solid black;
+    top:60%;
+    left:5%;
+}
+.box-2{
+    position: relative;
+    height:10em;
+    width:10em;
+    background-color:blue;
+    border:2px solid black;
+    top:20%;
+    left:80%;
+}
+    */
