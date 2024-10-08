@@ -1,0 +1,105 @@
+/* Reset default margins and padding */
+.background-img {
+    background-image: url('background.JPG');
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-size: cover; /* Ensures the whole image is visible */
+    background-position: center; /* Centers the image */
+}
+
+
+/* Container for left alignment */
+
+.container {
+    display: flex; 
+    position:relative;
+    left:3%;
+    top:7%;                 
+}
+
+.container2{
+    display: flex;
+    font-size: 3rem;
+    color:rgba(255, 255, 255, 0.5);;
+    position: relative;
+    left: 80%;
+    top: 80%;
+    padding: 10px;
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center the items vertically */
+    background-color: DodgerBlue;
+    height: auto;
+    width: 200px;
+    position: relative;
+    left: 25%;
+    top: 20%;
+    padding: 10px;
+}
+
+
+/* General Scoreboard Container */
+.scoreboard {
+    background-color: #00264d; /* Solid color background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px; /* Rounded corners only at the bottom */
+    display: inline-flex;  /* Use inline-flex for items to align in a row */
+    align-items: center;    /* Center items vertically within scoreboard */
+    padding: 5px;          /* Padding inside scoreboard */
+}
+
+/* Team Box Styling */
+.team-box {
+    display: inline-flex;
+    align-items: center;     /* Center items vertically in team box */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for team boxes */
+    border-radius: 5px;      /* Rounded corners for team boxes */
+    color: white;
+}
+
+/* Home Team Style */
+.team-home {
+    background-color: #1a75ff; /* Home team color */
+    margin-right: 5px;
+    border-radius: 8px 0 0 8px; /* Rounded corners only for the left side */
+}
+
+/* Away Team Style */
+.team-away {
+    background-color: #ff3333; /* Away team color */
+    margin-left: 5px;
+    border-radius: 0 8px 8px 0; /* Rounded corners only for the right side */
+}
+
+/* Team Flag Image */
+.team-flag {
+    width: 30px; /* Adjust the size of the flags */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between flag and team name */
+}
+
+/* Team Name and Score Styling */
+.team-name {
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold;
+    margin-right: 10px; /* Space between team name and score */
+}
+
+.score {
+    font-size: 1.5rem; /* Font size for score */
+    font-weight: bold;
+}
+
+/* Score Separator Box */
+.score-box {
+    font-size: 1.5rem; /* Font size for separator */
+    font-weight: bold;
+    color: white; /* Color for separator */
+    padding: 10px; /* Padding inside score box */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background for the score box */
+    border-radius: 5px; /* Rounded corners for score box */
+}

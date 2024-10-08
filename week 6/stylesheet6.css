@@ -15,6 +15,143 @@
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-color: black; /* Optional: adds a black background behind image */
 }
+
+.box {
+    position: relative;
+    height: 15em;
+    width: 10em;
+    background-color: red;
+    border: 2px solid black;
+    top: 60%;
+    left: 5%;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center the items vertically */
+    background-color: DodgerBlue;
+    height: auto;
+    width: 200px;
+    position: relative;
+    left: 25%;
+    top: 20%;
+    padding: 10px;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center the items vertically */
+    background-color: DodgerBlue;
+    height: auto; /* Allow height to adjust based on content */
+    width: 80%; /* Adjust width to fit better */
+    position: relative;
+    left: 10%;
+    top:25%;
+    /* Aligns at the bottom of the container */
+    padding: 10px;
+}
+
+.flex-container2 > div {
+    margin: 5px; /* Reduced margin */
+    padding: 10px;
+    font-size: 20px; /* Slightly smaller font size */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; /* Makes the divs adapt in size */
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; /* Makes the divs adapt in size */
+}
+
+
+/* Styling for individual divs */
+.box1 {
+    color: black;
+    background-color: rgb(241, 192, 255);
+    padding: 10px;
+    position: relative;
+}
+.box1 .box1Info{
+    color:black;
+    font-size: 12px
+}
+.box-2 {
+    color: aqua;
+    background-color: rgb(241, 192, 255);
+    padding: 10px;
+    position: relative;
+}
+.box2 {
+    background-color: lightgreen;
+    padding: 10px;
+    position: relative;
+}
+
+.box3 {
+    background-color: lightblue;
+    padding: 10px;
+    position: relative;
+}
+
+/* Styling for nested boxes */
+.sub-box1, .nested-box4 {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border: 1px solid black;
+    margin: 5px; /* Reduced margin */
+    padding: 5px; /* Reduced padding */
+    font-size: 14px;
+}
+.nested-box-2-1 {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border: 1px solid black;
+    margin: 5px; /* Reduced margin */
+    padding: 5px; /* Reduced padding */
+    font-size: 14px;
+}
+
+.nested-box1 {
+    background-color: rgb(229, 125, 255);
+    border: 1px solid black;
+    margin: 5px; /* Reduced margin */
+    padding: 5px; /* Reduced padding */
+    font-size: 14px;
+}
+
+.nested-box2 {
+    background-color: lightcoral;
+    border: 1px solid black;
+    margin: 5px; /* Reduced margin */
+    padding: 5px; /* Reduced padding */
+    font-size: 14px;
+}
+
+.nested-box3 {
+    background-color: lightcyan;
+    border: 1px solid black;
+    margin: 5px; /* Reduced margin */
+    padding: 5px; /* Reduced padding */
+    font-size: 14px;
+}
+
+
+.background-img {
+    background-image: url('/img/infomercial.jpg');
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-size: contain; /* Ensures the whole image is visible */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: black; /* Optional: adds a black background behind image */
+}
 .box{
     position: relative;
     height:15em;

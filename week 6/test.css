@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;                  /* Enable flexbox */
+    justify-content: flex-start;    /* Align items at the start of the main axis (left) */
+    align-items: flex-start; 
+    top:20px;       /* Align items at the start of the cross axis (top) */
+    height: 200px; 
+    width:30px;                /* Set a height for visual effect */
+    background-color: lightgray;    /* Background color for the container */
+}
+
+.item {
+    background-color: cornflowerblue; /* Background color for items */
+    padding: 20px;                   /* Padding inside items */
+    margin: 5px;                     /* Space between items */
+    color: white;                    /* Text color */
+}
