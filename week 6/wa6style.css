@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-img {
+    background-image: url('background.JPG');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.box1 {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+}
+
+.scoreboard {
+    background-color: #00264d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Team Box Styling */
+.team-box {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    /* Rounded corners for team boxes */
+    margin: 0 5px;
+    /* Space between boxes */
+    vertical-align: middle;
+    /* Align boxes vertically */
+}
+
+/* Home Team Style */
+.team-home {
+    background-color: #1a75ff;
+    border-radius: 8px 0 0 8px;
+    /* Rounded corners only for the left side */
+}
+
+/* Away Team Style */
+.team-away {
+    background-color: #ff3333;
+    border-radius: 0 8px 8px 0;
+    /* Rounded corners only for the right side */
+}
+
+
+.team-flag {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.team-name {
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.score-box {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.box2 {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 10px;
+}
