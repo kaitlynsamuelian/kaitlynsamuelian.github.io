@@ -1,8 +1,3 @@
-/*@media screen and (min-width: 1000px) {
-    body {
-      background-color: lightgreen;
-    }
-  }*/
 body{
     margin:0;
 }
@@ -13,7 +8,7 @@ ul {
     background-color: black;
     margin: 0;
     padding: 10px 0px;
-    justify-content:flex-end;/*moves everything to the*/
+    justify-content:flex-end;/*moves everything to the right*/
 }
 li a{
     text-decoration:none;/*gets rid of underline*/
@@ -30,4 +25,25 @@ li a:active{
     background-color:white;
     color:black
 }
+@media screen and (max-width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+    ul{
+        flex-direction: column;
+    }
+    li {
+       width:700px;
+       padding:10px 30px;
+    }
+    li a:hover{
+        background-color:red;
+    }
+  }
+
+@media screen and (min-width: 800px){
+
+}
+
+
 
