@@ -1,0 +1,32 @@
+/* styling for any navbar */
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  } */
+
+body{
+    margin: 0;
+}
+/* styling for horizontal navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: black;
+    height:40px;
+}
+li{
+    display:inline;
+    float:right;
+    margin-top:10px
+    
+}
+li a {
+    text-decoration: none;
+    color:white;
+    padding:10px 30px;
+}
+li a:hover{
+    background-color:darkslategray;
+}
+
