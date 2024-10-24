@@ -14,6 +14,7 @@ li a{
     text-decoration:none;/*gets rid of underline*/
     color:white;
     padding: 10px 30px;/*first val: top and bottom, second val: left and right*/
+    font-family: "Ruge Boogie", sans-serif;
 }
 
 li a:hover{
