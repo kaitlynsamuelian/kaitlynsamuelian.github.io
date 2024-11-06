@@ -1,0 +1,46 @@
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0; 
+  padding: 0;
+  height: 100vh; /* Ensure the body takes up the full height of the viewport */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.container {
+    max-width: 800px; /* Limits the width of the container to 800px */
+    margin: 50px auto; /* Centers the container horizontally and adds space at the top and bottom */
+    padding: 20px; 
+    background-color: rgb(255, 207, 246); /* White background */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(255, 130, 199, 0.69); /* Adds a subtle shadow around the container */
+  }
+
+label {
+  font-weight: bold;
+}
+
+div {
+  padding-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 20px;/* pixels of space inside the text input field (around the text) */
+  width: 100px;/*width of the text input field.*/
+}
+
+p {
+  background: rgb(255, 60, 184);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  visibility: hidden;
+  text-align: center;
+}
+.randomize{
+    background-color: #ff33ad; /* Light red */
+    color: rgb(255, 255, 255);
+    border:none;
+    padding: 2px;
+  }
+
