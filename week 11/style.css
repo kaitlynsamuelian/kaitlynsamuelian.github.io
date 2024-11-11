@@ -13,6 +13,12 @@ body {
   display: block;
   width: 640px;
   height: 480px;
+
+}
+.full-img img {
+  width: 100%; /* Fills the container's width */
+  height: 100%; /* Fills the container's height */
+  object-fit: cover; /* Optional: Maintains the image aspect ratio while covering the container */
 }
 
 .overlay {
@@ -37,6 +43,7 @@ button {
 
 .thumb-bar img {
   display: block;
+  height:100px; /*added this when i put my own images in*/
   width: 20%;
   float: left;
   cursor: pointer;
