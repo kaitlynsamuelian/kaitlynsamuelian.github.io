@@ -1,20 +1,19 @@
-// Link to the API endpoint
+// Link API endpoint: // Add a new variable that holds the API endpoint
 const apiEndpoint = 'https://catfact.ninja/fact';
 
-// Select the button and paragraph elements
+
 const button = document.getElementById('getFactButton');
 const factParagraph = document.getElementById('catFact');
 
-// Function to fetch and display a cat fact
-function getFact() {
-    console.log('Button clicked! Fetching a cat fact...');
+
+function getFact() {// function declaration,& button clicked checked by a message in the console 
+    console.log('Button clicked! Fetching cat fact...');
     
     // Fetch a random cat fact from the API
     fetch(apiEndpoint)
         .then(response => {
-            // Check if the response is ok (status code in the range 200-299)
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error('Network response was not ok.');
             }
             return response.json();
         })
@@ -28,7 +27,7 @@ function getFact() {
         });
 }
 
-// Function to display the fetched fact in the paragraph element
+// "displayRes" : displays the text of a fetched quote in the paragraph made earlier
 function displayRes(fact) {
     factParagraph.textContent = fact;
 }
@@ -36,5 +35,4 @@ function displayRes(fact) {
 // Add event listener to the button
 button.addEventListener('click', getFact);
 
-// Automatically fetch and display a fact when the page loads
 window.onload = getFact;
