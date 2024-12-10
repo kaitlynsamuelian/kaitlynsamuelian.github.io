@@ -1,5 +1,5 @@
 let proj;
-fetch('portfolio.json')
+fetch('port.json')
     .then(response=> {
         return response.json();
     }).then(projects => {
