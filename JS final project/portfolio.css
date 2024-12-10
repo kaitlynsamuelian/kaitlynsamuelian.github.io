@@ -1,0 +1,69 @@
+body #about-section{
+    padding:100px 20vw 3vh 20vw;
+} 
+h1{
+    font-family:Lora;
+    font-weight:300;
+    font-size: 50px;
+    display: inline-block;
+    transform: scaleX(.95);
+    transform-origin: 0 0;
+    margin: 0px 0px 15px -5px;
+      color: #261D02;
+  }
+h2{
+    font-family:Lora;
+    font-weight:300;
+    margin: 0px;
+    color: #261D02;
+  }
+  
+p{
+    font-family:Nunito;
+    font-size:16px;
+    margin-top:0px;
+    color:#616161;
+    line-height: 160%;
+}
+.about-section{
+    padding-left:80px;
+    width:38vw;
+}
+
+#projects{
+    display:flex;
+    flex-direction:column;
+    margin: 10vh 20vw;
+}
+
+#projects a{
+    text-decoration: none;
+    color:black;
+}
+
+.project:hover{
+    background-color:rgb(250, 220, 255);
+}
+.project{
+    display:flex;
+    flex-direction:row;
+    border: 1px solid black;
+    margin-top:10px;
+    padding: 15px 20px;
+}
+
+.project img{
+    width:10vw;
+}
+
+#buttons{
+    display:flex;
+    justify-content: center;
+}
+#buttons button{
+    margin:10px;
+}
+
+
+
+

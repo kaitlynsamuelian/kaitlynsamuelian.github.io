@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #edf2f4;
+    background-color: #0b132b;
+    text-align: center;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1c2541;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #edf2f4;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #3a506b;
+}
+
+header {
+    padding: 20px;
+    /* changes space all around my name */
+    background-color: #1c2541;
+    border-bottom: 3px solid #3a506b;
+    margin-top: 60px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    scroll-margin-top: 60px; /* Adjust this value to match the height of your navbar */
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #edf2f4;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#about p{
+    padding: 0px 20vw 0px 20vw;
+}
+
+
+#skills .skill {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#skills .skill p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #edf2f4;
+}
+
+#skills .skill-bar {
+    width: 100%;
+    background-color: #3a506b;
+    margin-bottom: 10px;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#skills .skill-fill {
+    height: 100%;
+    background-color: #edf2f4;
+    transition: width 1.5s ease;
+}
+#projectsTitle{
+    margin-bottom:10px;
+}
+#projects{
+    display:flex;
+    flex-direction:column;
+    margin: 10vh 20vw;
+    
+}
+
+#projects a{
+    text-decoration: none;
+    color:#edf2f4;
+}
+
+.project:hover{
+    background-color: #3a506b;
+}
+.project{
+    display:flex;
+    flex-direction:row;
+    border: 1px solid black;
+    margin-top:10px;
+    padding: 15px 20px;
+    background-color: #1c2541;
+}
+
+.project img{
+    width:10vw;
+}
+
+#buttons{
+    display:flex;
+    justify-content: center;
+    margin-bottom: -50px;
+}
+#buttons button{
+    margin:10px;
+}
+/* .photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photos img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+} */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c2541;
+    margin-top: 20px;
+}

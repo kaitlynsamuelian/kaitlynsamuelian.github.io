@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #edf2f4;
+            background-color: #0b132b;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #1c2541;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #edf2f4;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #3a506b;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #1c2541;
+            border-bottom: 3px solid #3a506b;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #edf2f4;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .photos img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .photos img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c2541;
+            margin-top: 20px;
+        }
+
+        .skills div {
+            background-color: #3a506b;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skills div span {
+            display: block;
+            height: 20px;
+            background-color: #edf2f4;
+            color: #0b132b;
+            line-height: 20px;
+            padding-left: 5px;
+            font-weight: bold;
+            width: 0;
+            animation: fill-bar 1.5s forwards;
+        }
+
+        @keyframes fill-bar {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        .skills div span[data-skill='80'] { width: 80%; }
+        .skills div span[data-skill='60'] { width: 60%; }
+        .skills div span[data-skill='90'] { width: 90%; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer | Designer | Creator</p>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet felis vel sapien ullamcorper sollicitudin non nec elit.</p>
+    </section>
+    <section id="projects" class="section"></section>
+        <h2>Projects</h2>
+        
+    </section>
+
+    <section id="photos" class="section photos">
+        <h2>Photos</h2>
+        <img src="https://via.placeholder.com/300" alt="Photo 1">
+        <img src="https://via.placeholder.com/300" alt="Photo 2">
+        <img src="https://via.placeholder.com/300" alt="Photo 3">
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <div>
+            <span data-skill="80">HTML</span>
+        </div>
+        <div>
+            <span data-skill="60">CSS</span>
+        </div>
+        <div>
+            <span data-skill="90">JavaScript</span>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: john.doe@example.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
