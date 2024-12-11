@@ -1,8 +1,5 @@
 /* General styling for the dynamically generated project pages */
-
-/* Styling for the project-head container */
-/* General styling for the dynamically generated project pages */
-*:not(.project-head, h1, h2, p, strong) {
+*:not(.project-head, h1, h2) {
     margin: 0 auto;
     max-width: 80%; /* Adjust to control the content width */
     padding: 20px;
@@ -10,6 +7,8 @@
     color: #edf2f4;
     text-align: center;
 }
+
+/* Styling for the home link */
 .home-link {
     position: absolute; /* Position it at the top */
     top: 10px; /* Adjust as necessary */
@@ -32,88 +31,119 @@
 }
 
 /* Styling for the project-head container */
-.project-head{
+.project-head {
     display: block; /* Ensure it's a block-level element */
     text-align: left; /* Align the text inside the container to the left */
-    width: 700.477px;  /* Set the width to 488.477px */
-    height: 300px;      /* Set the height to 254px */
+    width: 700.477px;  /* Set the width */
+    height: 170px;      /* Set the height */
     padding: 0;         /* Remove padding to make text flush with the edges */
     box-sizing: border-box; /* Ensure padding is included in the total dimensions */
     color: #edf2f4;     /* Text color */
 }
 
 /* Style the project title */
-h1 {
+.project-head p {
     font-size: 3rem;
-    margin-bottom: 10px;
     text-align: left; /* Align the h1 text to the left */
 }
 
-h2 {
+/* Styling for the subtitle */
+.project-head h2 {
     font-size: 1.8rem;
     color: #edf2f4;
-    margin-bottom: 20px;
-    text-align: left; /* Align the h2 text to the left */
+    text-align: left; /* Reduced space below the subtitle */
 }
 
 /* Abstract section */
-.project-head p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: left; /* Align the abstract text to the left */
-    margin-top: 15px;
-    margin-bottom: 30px;
-    line-height: 200%;
-}
 
 /* Strong tags inside the project-head */
 strong {
     font-weight: bold;
 }
 
-/* Styling for the images in the project page */
-.project-images img {
-    width: 100%;
-    max-width: 300px; /* Limit the width of images */
-    margin: 20px 0;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+/* Styling for the image carousel */
+.project-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Reduced space above the carousel */
 }
 
-/* Image hover effect */
-.project-images img:hover {
-    transform: scale(1.05);
-}
-
-/* Styling for the description section */
-.project-description p {
-    font-size: 1.1rem;
-    color: #edf2f4;
+.main-image img {
+    width: 400px;  /* Fixed width for the main image */
+    height: 300px; /* Fixed height for the main image */
+    object-fit: contain; /* Ensures the image is contained in the box while maintaining aspect ratio */
+    border: 2px solid #ccc;
     margin-bottom: 10px;
 }
 
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100px;  /* Fixed width for thumbnails */
+    height: 75px;  /* Fixed height for thumbnails */
+    object-fit: cover; /* Ensures the image fits the box without distortion */
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+
+/* Styling for the description section */
+.project-abstract p {
+    color: #edf2f4;
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Citations section styling */
+
 /* Citations section styling */
 .citations {
-    background-color: #1c2541;
     padding: 10px 20px;
     margin-top: 30px;
     border-radius: 8px;
+    color: #edf2f4;
+    word-wrap: break-word;  /* Allow long words to break */
+    overflow-wrap: break-word; /* Ensure long URLs break properly */
+    clear: both; /* Clear any floating elements above */
+    overflow: auto; /* Ensure no overflow into adjacent sections */
 }
 
+/* Citations text */
 .citations p {
     color: #edf2f4;
     font-size: 1rem;
+    margin: 0;
 }
 
 /* Citation links */
 .citations a {
-    color: #3a506b;
+    color: #edf2f4;
     text-decoration: none;
+    white-space: normal; /* Allow wrapping of the URL */
+    overflow-wrap: break-word;  /* Ensure the URL breaks correctly when needed */
 }
 
 .citations a:hover {
     text-decoration: underline;
 }
+
+/* General styling for the dynamically generated project pages */
+.project-head {
+    display: block; /* Ensure it's a block-level element */
+    text-align: left; /* Align the text inside the container to the left */
+    width: 700.477px;  /* Set the width */
+    height: auto;      /* Change fixed height to auto for dynamic sizing */
+    padding: 0;         /* Remove padding to make text flush with the edges */
+    box-sizing: border-box; /* Ensure padding is included in the total dimensions */
+    color: #edf2f4;     /* Text color */
+}
+
 
 
 /* Style the project title */
