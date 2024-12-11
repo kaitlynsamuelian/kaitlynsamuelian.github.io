@@ -1,0 +1,204 @@
+/* General styling for the dynamically generated project pages */
+
+/* Styling for the project-head container */
+/* General styling for the dynamically generated project pages */
+*:not(.project-head, h1, h2, p, strong) {
+    margin: 0 auto;
+    max-width: 80%; /* Adjust to control the content width */
+    padding: 20px;
+    background-color: #0b132b;
+    color: #edf2f4;
+    text-align: center;
+}
+.home-link {
+    position: absolute; /* Position it at the top */
+    top: 10px; /* Adjust as necessary */
+    left: 10px; /* Adjust as necessary */
+    font-size: 1.2rem;
+    color: #edf2f4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+}
+
+.home-link a {
+    color: #edf2f4;
+    text-decoration: none;
+}
+
+.home-link a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    background-color: #1c2541; /* Slightly darker shade for hover effect */
+}
+
+/* Styling for the project-head container */
+.project-head{
+    display: block; /* Ensure it's a block-level element */
+    text-align: left; /* Align the text inside the container to the left */
+    width: 700.477px;  /* Set the width to 488.477px */
+    height: 300px;      /* Set the height to 254px */
+    padding: 0;         /* Remove padding to make text flush with the edges */
+    box-sizing: border-box; /* Ensure padding is included in the total dimensions */
+    color: #edf2f4;     /* Text color */
+}
+
+/* Style the project title */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: left; /* Align the h1 text to the left */
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #edf2f4;
+    margin-bottom: 20px;
+    text-align: left; /* Align the h2 text to the left */
+}
+
+/* Abstract section */
+.project-head p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left; /* Align the abstract text to the left */
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 200%;
+}
+
+/* Strong tags inside the project-head */
+strong {
+    font-weight: bold;
+}
+
+/* Styling for the images in the project page */
+.project-images img {
+    width: 100%;
+    max-width: 300px; /* Limit the width of images */
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the description section */
+.project-description p {
+    font-size: 1.1rem;
+    color: #edf2f4;
+    margin-bottom: 10px;
+}
+
+/* Citations section styling */
+.citations {
+    background-color: #1c2541;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.citations p {
+    color: #edf2f4;
+    font-size: 1rem;
+}
+
+/* Citation links */
+.citations a {
+    color: #3a506b;
+    text-decoration: none;
+}
+
+.citations a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style the project title */
+/* h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: left; /* Align the h1 text to the left 
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #edf2f4;
+    margin-bottom: 20px;
+    text-align: left; /* Align the h2 text to the left 
+} */
+
+/* Abstract section */
+/* .project-head p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left; /* Align the abstract text to the left 
+}
+.project-head p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 200%;
+} */
+/* *:not(.project-head) {
+    margin: 0 auto;
+    max-width: 80%; /* Adjust to control the content width 
+    padding: 20px;
+    background-color: #0b132b;
+    color: #edf2f4;
+    text-align: center;
+}
+.project-head {
+    display: block; /* Ensure it's a block-level element 
+    text-align: left; /* Align the text inside the container to the left 
+    background-color: #3a506b;
+    width: 488.477px;  /* Set the width to 488.477px 
+    height: 254px;      /* Set the height to 254px 
+    padding: 20px;      /* Optional: Add padding if needed 
+    box-sizing: border-box; /* Ensure padding is included in the total dimensions 
+}
+strong {
+    font-weight: bold;
+}
+
+/* Styling for the images in the project page 
+.project-images img {
+    width: 100%;
+    max-width: 300px; /* Limit the width of images 
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Styling for the description section 
+.project-description p {
+    font-size: 1.1rem;
+    color: #edf2f4;
+    margin-bottom: 10px;
+}
+
+
+ .citations {
+    background-color: #1c2541;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.citations p {
+    color: #edf2f4;
+    font-size: 1rem;
+}
+
+
+.citations a {
+    color: #3a506b;
+    text-decoration: none;
+}
+
+.citations a:hover {
+    text-decoration: underline;
+}  */
